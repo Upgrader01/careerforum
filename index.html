@@ -365,7 +365,71 @@
 
 		<section class="modal" id="modal">
 			<div class="modal__content">
-                <button onclick="onModalClose()">X</button>
+                <button class="btn__close" onclick="onModalClose()">X</button>
+
+                <div class="formWrapper__partner">
+                    <h2>Зареєструватися</h2>
+
+                    <form id="modal__form">
+                        <div class="rows">
+                            <div class="row">
+                                <div class="columns">
+                                    <div class="col">
+                                        <input
+                                            required
+                                            type="text"
+                                            placeholder="Назва компанії"
+                                            id="name_company"
+                                            name="NameCompany"
+                                            tabindex="1"
+                                            autocomplete="off"
+                                        />
+                                        <input
+                                            required
+                                            type="text"
+                                            placeholder="Сфера діяльності"
+                                            id="activity"
+                                            name="Activity"
+                                            tabindex="3"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <input
+                                            required
+                                            type="text"
+                                            placeholder="Ім’я контактної особи"
+                                            id="name2"
+                                            name="Name"
+                                            tabindex="2"
+                                            autocomplete="off"
+                                        />
+                                        <input
+                                            required
+                                            type="text"
+                                            placeholder="Моб. тел"
+                                            id="telephone"
+                                            name="Telephone"
+                                            tabindex="4"
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                        <button
+                            id="sendButton"
+                            type="button"
+                            onclick="onFormSubmitPertner()"
+                            class="btn__partner-modal"
+                        >
+                            Стати партнером
+                        </button>
+
+                        <span id="errorMessagePartner">Заповніть усі поля</span>
+                        <span id="successMessagePartner">Зареєстрували вас. Дякуємо!</span>
+                    </form>
+                </div>
             </div>
 		</section>
 
