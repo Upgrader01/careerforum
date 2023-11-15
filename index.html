@@ -88,7 +88,7 @@
 					</p>
 					<p>Чекаємо на тебе!</p>
 				</div>
-                
+
 				<div class="img"></div>
 				<img src="./assets/img/vector_1.png" alt="" />
 			</div>
@@ -365,6 +365,7 @@
 
 		<section class="modal" id="modal">
 			<div class="modal__content">
+                <button onclick="onModalClose()">X</button>
             </div>
 		</section>
 
@@ -397,6 +398,12 @@
 				var myElement = document.getElementById("modal");
 
 				myElement.style.display = "flex";
+			}
+
+            function onModalClose() {
+				var myElement = document.getElementById("modal");
+
+				myElement.style.display = "none";
 			}
 		</script>
 	</body>
